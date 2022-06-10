@@ -4,15 +4,12 @@ using UnityEngine;
 
 public class Spiral : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+
+public float spiralRotateSpeed = 1; // determines the speed the spiral rotates.
 
     // Update is called once per frame
     void Update()
     {
-        
+        this.transform.Rotate(0,0,spiralRotateSpeed,Space.World);
     }
 }
